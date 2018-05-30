@@ -1,0 +1,145 @@
+/*
+
+*= require normalize-rails
+*= require_self
+*= require_tree .
+ 
+ */
+ 
+header {
+	background: #00b09b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(left, #96c93d, #00b09b);
+  background: -moz-linear-gradient(left, #96c93d, #00b09b);
+  background: -o-linear-gradient(left, #96c93d, #00b09b);
+  background: linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+} 
+ 
+label {
+	padding-right: 5px;
+}
+
+p {
+	display:inline-block;
+	font-family: 'IBM Plex Sans', sans-serif;
+	padding-right: 10px;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-right: 50px;
+	font-weight: 100;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.button {
+	cursor: pointer;
+	border: 1px solid #9B9B9B;
+	padding: .7rem 1.25rem;
+	border-radius: .3rem;
+	outline: none;
+	background: white;
+	text-decoration: none;
+	color: #9B9B9B;
+	margin-bottom: 15px;
+	&:hover {
+				color: #616b7a;
+			}
+}
+
+header {
+	width: 100%;
+	padding: 2rem 0;
+	border-bottom: 1px solid #E4E4E4;
+	#logo {
+		float: left;
+		font-size: 1.75rem;
+		a {
+			color: white;
+			text-decoration: none;
+			&:hover {
+				color: #1ba324;
+			}
+		}
+	}
+	nav {
+		float: right;
+		a {
+			margin-left: 1.5rem;
+			line-height: 2;
+				color: white;
+			text-decoration: none;
+			&:hover {
+				color: #1add27;
+			}
+		}
+	}
+}
+
+.notice {
+	padding-left: 125px;
+}
+
+.alert {
+	padding-left: 125px;
+}
+
+
+
+$dark_gray: #2B2E2E;
+$light_gray: #C0C1C1;
+$green: #33CD99;
+
+
+footer {
+	background: $dark_gray;
+	width: 100%;
+	padding: 2rem 0;
+	color: white;
+	text-align: center;
+
+	p {
+		margin: 0;
+		font-size: .85rem;
+	}
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+	width: 100%;
+	margin-bottom: 1rem;
+	border: 1px solid $light_gray;
+	border-radius: .4rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+	height: 40px;
+}
+
+textarea {
+	min-height: 200px;
+}
+
+
+
+@import "font-awesome";
+@import 'home.css.scss';
+@import 'post.scss';
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Source+Sans+Pro');
